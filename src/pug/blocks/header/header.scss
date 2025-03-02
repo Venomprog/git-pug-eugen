@@ -1,3 +1,55 @@
 .header {
-  flex: 0 1;
+  margin-top: 36px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 104px;
+  }
+
+  .button {
+    height: 40px;
+    border-radius: 45px;
+
+  }
+
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    column-gap: 34px;
+
+  }
+
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+
+    &:hover {
+      .header__arrow-down {
+        rotate: 180deg;
+        transition: rotate 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__button-enter {
+    min-width: 110px;
+    border-radius: 45px;
+    background-color: #fff;
+    border: 1.5px solid #1064E5;
+
+  }
+
+  &__button-register {
+    min-width: 189px;
+    border-radius: 45px;
+    background-color: #1064E5;
+    color: #FFFFFF;
+  }
 }
+
