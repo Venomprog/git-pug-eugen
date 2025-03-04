@@ -1,6 +1,4 @@
-@use 'sass:map';
-
-
+@charset "UTF-8";
 /**
   Нормализация блочной модели
  */
@@ -32,15 +30,15 @@ body,
     у которых есть атрибут class
    */
 :where(h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl):where([class]) {
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl):where([class]) {
   margin-block: 0;
 }
 
@@ -73,7 +71,6 @@ body,
    */
 p {
   --paragraphMarginBottom: 24px;
-
   margin-block: 0;
 }
 
@@ -85,7 +82,6 @@ p:where(:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
-
 /**
     Упрощаем работу с изображениями и видео
    */
@@ -93,7 +89,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-
 }
 
 /**
@@ -154,18 +149,12 @@ label {
   cursor: pointer;
 }
 
-
-
-
-
 /**
     Чиним баг задержки смены цвета при взаимодействии с svg-элементами
    */
 svg * {
   transition-property: fill, stroke;
 }
-
-
 
 /**
     Приведение рамок таблиц в классический 'collapse' вид
@@ -180,7 +169,6 @@ svg * {
     которые предпочитают их не использовать
    */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   ::before,
   ::after {
@@ -190,40 +178,27 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-
-
 :root {
   --color-dark:
     --color-dark-alternate: #315912;
   --color-light:
     --color-dark-gray: #404040;
   --color-light-gray: #a99090;
-
   --border-radius: 30px;
   --border: 1px solid var(--color-light);
-
-
-
   --input-height: 54px;
-
   --container-width: 1440px;
   --container-padding-x: 103px;
-
   --transition-duration: 0.2s;
-
   --header-height: 90px;
 }
-
-
 
 body {
   font-family: var(--font-family-base);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
-
   background-color: var(--color-dark);
-
 }
 
 a,
@@ -235,22 +210,14 @@ svg * {
 }
 
 .button {
-
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-
-  &:hover {
-    color: #2b5a8f;
-  }
-
 }
-
-
-
-
-
+.button:hover {
+  color: #2b5a8f;
+}
 
 a:hover {
   color: var(--color-light-gray);
@@ -259,7 +226,6 @@ a:hover {
 p {
   margin-block: 0;
 }
-
 
 p:not([class]):not(:last-child) {
   margin-bottom: 24px;
@@ -284,12 +250,11 @@ p:not([class]):not(:last-child) {
   border: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
-  clip-path: inset(100%) !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
-
-
 
 /*
   --primary1: teal;
@@ -325,4 +290,4 @@ $mediaWidthLaptop: 1340px;
 $mediaWidthTablet: 767px;
 $mediaWidthMobile: 320px;
 
-*/
+*//*# sourceMappingURL=variables.css.map */
