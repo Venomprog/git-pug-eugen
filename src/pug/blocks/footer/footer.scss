@@ -1,3 +1,110 @@
 .footer {
-  flex: 0 1;
+  width: 1440px;
+  color: #ffffff;
+  background-color: #061224;
+
+  a {
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: var(--color-light-gray);
+  }
+
+  &__inner {
+    padding: 64px 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__row-left {
+    display: flex;
+
+
+  }
+
+  &__nav {
+    display: flex;
+    margin-left: 157px;
+    column-gap: 47px;
+
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+  }
+
+  &__nav-item:nth-child(3) {
+    margin-top: 32px;
+  }
+
+
+  &__nav-link {
+    font-family: $font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  &__row-right {
+    display: flex;
+    column-gap: 80px;
+
+  }
+
+  &__contacts-mail,
+  &__contacts-tel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    font-style: normal;
+
+  }
+
+  &__contacts-tel {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.5;
+  }
+
+  &__extra {
+    width: 50%;
+    margin-top: 16px;
+    opacity: 0.5;
+
+
+  }
+
+  &__extra-inner {
+    display: flex;
+
+
+  }
+
+  &__extra-right {
+    display: flex;
+    margin-left: 190px;
+    column-gap: 47px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+
+
+    &:hover {
+      color: #423d3d;
+    }
+
+  }
+
+
 }

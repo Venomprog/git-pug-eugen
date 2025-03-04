@@ -1,9 +1,12 @@
 .header {
   margin-top: 36px;
+  width: auto;
+
 
   &__inner {
     display: flex;
     align-items: center;
+
   }
 
   .button {
@@ -12,25 +15,35 @@
     width: fit-content;
   }
 
+  &__menu {
+    flex-shrink: 0;
+  }
 
   &__menu-list {
     margin-left: 182px;
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
   }
 
   &__menu-link {
     display: flex;
     align-items: center;
     gap: 5px;
-    
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+
+
+
 
     &:last-child {
       margin-left: 25px;
     }
-    
+
 
     &:hover {
       .header__arrow-down {
@@ -54,4 +67,3 @@
     color: #FFFFFF;
   }
 }
-

@@ -1,0 +1,11 @@
+.footer {
+  background-color: #061224;
+}
+
+.footer__nav-link {
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}/*# sourceMappingURL=footer.css.map */
