@@ -70,7 +70,7 @@ body,
     Обнуляем вертикальные внешние отступы параграфа,
     объявляем локальную переменную для внешнего отступа вниз,
     чтобы избежать взаимодействие с более сложным селектором
-   */
+    */
 p {
   --paragraphMarginBottom: 24px;
 
@@ -194,7 +194,7 @@ svg * {
 
 :root {
   --color-dark:
-    --color-dark-alternate: #315912;
+  --color-dark-alternate: #315912;
   --color-light:
     --color-dark-gray: #404040;
   --color-light-gray: #a99090;
@@ -262,7 +262,7 @@ p {
 
 
 p:not([class]):not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 6px;
 }
 
 .container {

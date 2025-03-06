@@ -11,8 +11,11 @@
     color: var(--color-light-gray);
   }
 
+
+
   &__inner {
-    padding: 64px 0;
+    height: 288px;
+    padding: 50px 0;
   }
 
   &__row {
@@ -64,12 +67,12 @@
   &__contacts-tel {
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
     font-style: normal;
 
   }
 
   &__contacts-tel {
+    
     font-family: $font;
     font-weight: 400;
     font-size: 14px;
