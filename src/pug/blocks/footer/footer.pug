@@ -1,3 +1,51 @@
 mixin footer
-  footer.footer(class=attributes.class)
-    .footer__inner FOOTER   привет Евгений
+  footer.footer.container(class=attributes.class)
+    .footer__inner
+      .footer__row
+        .footer__row-left
+          .footer__logo
+              +footer-logo
+          .footer__nav
+            ul.footer__nav-list
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Про нас 
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Цены
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Вход 
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Регистрация
+            ul.footer__nav-list
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Блог
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Контакты
+        .footer__row-right
+          .footer__contacts
+            address.footer__contacts-mail
+              p  
+                a(href="infosmartsign@smarttender.biz") infosmartsign@smarttender.biz
+              p  
+                a(href="Facebook") Facebook
+          .footer__contacts 
+            address.footer__contacts-tel
+              p  
+                | пр-т Миколи Бажана, 14, 
+                br
+                | А Київ, 02072
+              p  
+                a(href="tel:0 800 750643") 0 800 750643
+              p  
+                a(href="tel:+380 44 334 56 43") +380 44 334 56 43
+              p  
+                a(href="tel:+380 44 338 86 43") +380 44 338 86 43
+      .footer__extra
+        .footer__extra-inner 
+          .footer__extra-copyright 
+            p
+              |© <time datetime="2020">2020</time> Signy
+          .footer__extra-right
+            p
+              a.footer__extra-link(href="#") Договір оферти
+            p
+              a.footer__extra-link(href="#") Безпека сервісу
