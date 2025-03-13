@@ -1,14 +1,31 @@
-mixin main-hero(mods)
-  -
-    const baseName = 'main-hero'
-    let allMods = ''
-    if (typeof mods !== 'undefined' && mods) {
-      const modsList = mods.split(',')
-      for (const element of modsList) {
-        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
-      }
-      allMods = allMods.trim()
-    }
+mixin main-hero
+  section.main-hero.container
+    .main-hero__inner
+      .main-hero__body 
+        h1.main-hero__title Цифровой документооборот <br> в три этапа:
+        .main-hero__description
+          ul.main-hero__list  
+            li.main-hero__item
+              button.main-hero__button
+                | 1 
+            span.main-hero__number 
+              +line
 
-  .main-hero(class=allMods)&attributes(attributes)
-    | Main-hero
+            li.main-hero__item
+              button.main-hero__button
+                | 2 
+            span.main-hero__number 
+              +line
+
+            li.main-hero__item  
+              button.main-hero__button
+                | 3 
+          .main-hero__description-body
+            h3.main-hero__description-title Быстрая регистрация
+            .main-hero__description-text
+              p
+              | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
+      button.main-hero__button-register.button ПОПРОБОВАТЬ БЕСПЛАТНО
+    .main-hero__image.container
+      img(src="./images/main-image.png" alt="")
+

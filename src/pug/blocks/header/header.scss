@@ -14,6 +14,8 @@
     border-radius: 45px;
     padding: 8px 32px;
     width: fit-content;
+    letter-spacing: 0.04em;
+    
   }
 
   &__menu {
@@ -25,6 +27,7 @@
     display: flex;
     align-items: center;
     gap: 36px;
+    letter-spacing: 0.04em;
 
   }
 
@@ -58,7 +61,7 @@
   &__button-enter {
     margin-left: 32px;
     background-color: #fff;
-    border: 1.5px solid #1064E5;
+    
 
   }
 
