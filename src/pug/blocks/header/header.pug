@@ -1,6 +1,6 @@
 mixin header
-  header.header.container
-    .header__inner
+  header.header
+    .header__inner.container
       a.header__logo(href="#")
         +header-logo
       nav.header__menu
@@ -17,10 +17,11 @@ mixin header
             a.header__menu-link(href="#") ЦЕНЫ 
           .header__menu-item
             a.header__menu-link(href="#") КОНТАКТЫ
-      button.header__button-enter.button
-        span.header__button-text ВХОД
-      button.header__button-register.button
-        span.header__button-text РЕГИСТРАЦИЯ
+      .header__actions
+        button.header__button-enter.button
+          span.header__button-text ВХОД
+        button.header__button-register.button
+          span.header__button-text РЕГИСТРАЦИЯ
       .header__menu-item
         .header__menu-link(href="#") РУС
           span.header__arrow-down

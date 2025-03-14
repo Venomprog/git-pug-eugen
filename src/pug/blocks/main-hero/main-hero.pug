@@ -1,6 +1,6 @@
 mixin main-hero
-  section.main-hero.container
-    .main-hero__inner
+  section.main-hero
+    .main-hero__inner.container
       .main-hero__body 
         h1.main-hero__title Цифровой документооборот <br> в три этапа:
         .main-hero__description
@@ -10,13 +10,11 @@ mixin main-hero
                 | 1 
             span.main-hero__number 
               +line
-
             li.main-hero__item
               button.main-hero__button
                 | 2 
             span.main-hero__number 
               +line
-
             li.main-hero__item  
               button.main-hero__button
                 | 3 
@@ -26,6 +24,43 @@ mixin main-hero
               p
               | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
       button.main-hero__button-register.button ПОПРОБОВАТЬ БЕСПЛАТНО
-    .main-hero__image.container
-      img(src="./images/main-image.png" alt="")
+    .main-hero__image
+      img.main-hero__image-img(src="./images/main-image.png" alt="")
+  .main-hero__pagination
+    .main-hero__pagination-items
+      button.main-hero__pagination-item
+        span.main-hero__pagination-number       
+      button.main-hero__pagination-item
+        span.main-hero__pagination-number          
+      button.main-hero__pagination-item
+        span.main-hero__pagination-number
+  .main__section
+    .main__section-inner.container
+      ul.main__section-list
+        li.main__section-item
+          .main__section-item-body
+            .main__section-item-title
+              h3.main__section-item-title-text Моментально
+            .main__section-item-text
+              p
+              | Никаких задержек. <br> 1 секунда на подписание
+          img.main__section-item-image(src="./images/speedometer.svg" alt="speedometer")
+        li.main__section-item
+          .main__section-item-body
+            .main__section-item-title
+              h3.main__section-item-title-text Глобально
+            .main__section-item-text
+              p
+              | Сервис доступен 24\7 <br>со всех устройств
+          img.main__section-item-image(src="./images/positive-vote.svg" alt="positive-vote")
+        li.main__section-item
+          .main__section-item-body
+            .main__section-item-title
+              h3.main__section-item-title-text Экономно
+            .main__section-item-text
+              p
+              | В 30 раз дешевле чем <br> почта и курьеры
+          img.main__section-item-image(src="./images/piggy-bank.svg" alt="piggy-bank")
+
+
 

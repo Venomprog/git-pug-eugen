@@ -1,7 +1,6 @@
 .footer {
-  width: 1440px;
-  color: #ffffff;
-  background-color: #061224;
+  
+
 
   a {
     color: #ffffff;
@@ -14,6 +13,8 @@
 
 
   &__inner {
+    color: #ffffff;
+    background-color: #061224;
     height: 288px;
     padding: 50px 0;
   }
@@ -72,7 +73,7 @@
   }
 
   &__contacts-tel {
-    
+
     font-family: $font;
     font-weight: 400;
     font-size: 14px;
@@ -81,7 +82,6 @@
   }
 
   &__extra {
-    width: 50%;
     margin-top: 16px;
     opacity: 0.5;
 
@@ -96,7 +96,7 @@
 
   &__extra-right {
     display: flex;
-    margin-left: 190px;
+    margin-left: 195px;
     column-gap: 47px;
     font-weight: 400;
     font-size: 12px;

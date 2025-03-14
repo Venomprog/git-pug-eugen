@@ -1,13 +1,18 @@
-.header {
-  width: 1440px;
-  padding-top: 36px;
+.header { 
 
 
   &__inner {
+    padding: 36px 104px;
     display: flex;
-    width: 1440px;
+    justify-content: space-between;
     align-items: center;
 
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
 
   .button {
@@ -26,9 +31,15 @@
     margin-left: 182px;
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 34px;
     letter-spacing: 0.04em;
 
+  }
+
+  &__menu-item {
+    &:nth-child(4) {
+      margin-left: 24px;
+    }
   }
 
   &__menu-link {
@@ -40,15 +51,7 @@
     font-size: 14px;
     line-height: 24px;
 
-
-
-
-
-    &:last-child {
-      margin-left: 25px;
-    }
-
-
+   
     &:hover {
       .header__arrow-down {
         rotate: 180deg;
@@ -66,7 +69,6 @@
   }
 
   &__button-register {
-    margin-left: 24px;
     background-color: #1064E5;
     color: #FFFFFF;
   }
