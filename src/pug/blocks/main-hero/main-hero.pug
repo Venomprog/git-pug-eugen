@@ -23,17 +23,17 @@ mixin main-hero
             .main-hero__description-text
               p
               | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
-      button.main-hero__button-register.button ПОПРОБОВАТЬ БЕСПЛАТНО
+      button.main-hero__button-register.button.button-color ПОПРОБОВАТЬ БЕСПЛАТНО
     .main-hero__image
       img.main-hero__image-img(src="./images/main-image.png" alt="")
-  .main-hero__pagination
-    .main-hero__pagination-items
-      button.main-hero__pagination-item
-        span.main-hero__pagination-number       
-      button.main-hero__pagination-item
-        span.main-hero__pagination-number          
-      button.main-hero__pagination-item
-        span.main-hero__pagination-number
+    .main-hero__pagination
+      .main-hero__pagination-items
+        button.main-hero__pagination-item
+          span.main-hero__pagination-number       
+        button.main-hero__pagination-item
+          span.main-hero__pagination-number          
+        button.main-hero__pagination-item
+          span.main-hero__pagination-number
   .main__section
     .main__section-inner.container
       ul.main__section-list
@@ -61,6 +61,45 @@ mixin main-hero
               p
               | В 30 раз дешевле чем <br> почта и курьеры
           img.main__section-item-image(src="./images/piggy-bank.svg" alt="piggy-bank")
+
+  section.form 
+    .form__inner
+      .form__body.container
+        .form__body-content
+          .form__title.h2
+            h3.form__title-text Комфорт в работе
+          .form__description
+            p.form__description-text
+              |&ndash; Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+            p.form__description-text
+              |&ndash; Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+            p.form__description-text
+              |&ndash; Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+            p.form__description-text
+              |&ndash; Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+            button.form__button.button
+              | Узнать больше
+        img.form__image(src="./images/form-imgRight.png" alt="form-image")
+      .form__body-reverse.container
+        .form__body-content
+          .form__title.h2
+            h3.form__title-text Наш продукт это:
+          .form__description
+            p.form__description-text
+              |&ndash; Web версия без установки программного обеспечения
+            p.form__description-text
+              |&ndash; Возможность бесплатно и безлимитно обрабатывать входящие документы
+            p.form__description-text
+              |&ndash; Простота интеграции с 1С и другими сервисами
+            p.form__description-text
+              |&ndash; Поддержка входа через Mobile ID
+            button.form__button.button.button-color
+              | Узнать больше
+        img.form__image(src="./images/form-imgLeft.png" alt="form-image")
+
+
+
+
 
 
 

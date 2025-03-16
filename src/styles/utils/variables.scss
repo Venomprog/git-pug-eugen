@@ -230,10 +230,18 @@ svg * {
   line-height: 24px;
   text-align: center;
   border: 1.5px solid #1064E5;
+  border-radius: 45px;
 
   &:hover {
     color: #2b5a8f;
   }
+
+}
+
+.button-color {
+  background-color: #1064E5;
+  color: #fff;
+  width: fit-content;
 
 }
 
