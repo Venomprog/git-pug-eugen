@@ -20,11 +20,11 @@ html {
   }
 
   @media (min-width: 1201px) {
-    font-size: getVw($fs, 1920px / 100);
+    font-size: getVw($fs, 1440px / 100);
   }
 
   @media (min-width: 1920px) {
-    font-size: getVw($fs, 1920px / 100);
+    font-size: getVw($fs, 1440px / 100);
   }
 }
 

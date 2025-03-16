@@ -7,18 +7,27 @@
 
 
 .main-hero {
-  display: contents;
   position: relative;
 
+  height: rem(676px);
+
+  @media #{media('<',d)} {
+    height: rem(516px);
+  }
+
+
+
+
+
   &__inner {
-    margin-top: 80px;
+    padding-top: rem(190px);
   }
 
   &__body {
     display: flex;
     align-items: start;
     flex-direction: column;
-    max-width: 586px;
+    max-width: rem(586px);
     row-gap: 14px;
   }
 
@@ -86,8 +95,8 @@
 
   &__image-img {
     width: 100%;
-    height: 676px;
-    object-fit: fill;
+    height: rem(676px);
+    object-fit: cover;
   }
 
 
@@ -97,11 +106,15 @@
     padding: 17px 32px;
   }
 
-
+  &__pagination {
+    position: absolute;
+    bottom: rem(29px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 
   &__pagination-items {
-    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
