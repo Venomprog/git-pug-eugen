@@ -1,17 +1,17 @@
-.header { 
+.header {
 
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
 
-    &__logo {
-      svg {
-        width: rem(130px);
-        height: rem(40px);
-      }
+  &__logo {
+    svg {
+      width: rem(130px);
+      height: rem(40px);
     }
+  }
 
   &__inner {
     padding: rem(36px) rem(104px);
@@ -24,15 +24,15 @@
   .header__actions {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: rem(24px);
   }
 
   .button {
-    border-radius: 45px;
-    padding: 8px 32px;
+    border-radius: var(--border-radius);
+    padding: rem(8px) rem(32px);
     width: fit-content;
     letter-spacing: 0.04em;
-    
+
   }
 
   &__menu {
@@ -40,30 +40,30 @@
   }
 
   &__menu-list {
-    margin-left: 182px;
+    margin-left: rem(182px);
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: rem(34px);
     letter-spacing: 0.04em;
 
   }
 
   &__menu-item {
     &:nth-child(4) {
-      margin-left: 24px;
+      margin-left: rem(24px);
     }
   }
 
   &__menu-link {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: rem(5px);
 
     font-weight: 500;
     font-size: rem(14px);
-    line-height: 24px;
+    line-height: rem(24px);
 
-   
+
     &:hover {
       .header__arrow-down {
         rotate: 180deg;
@@ -74,9 +74,9 @@
   }
 
   &__button-enter {
-    margin-left: 32px;
+    margin-left: rem(32px);
     background-color: #fff;
-    
+
 
   }
 

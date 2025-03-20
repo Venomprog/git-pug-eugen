@@ -1,0 +1,33 @@
+.main__advantages {
+
+  &-inner {
+    display: flex;
+    justify-content: center;
+    padding: rem(75px) rem(225px);
+  }
+
+  &-list {
+    display: flex;
+    gap: 54px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: rem(20px);
+  }
+
+  &-item-title {
+    font-weight: 500;
+    font-size: rem(24px);
+  }
+
+  &-item-text {
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 130%;
+    opacity: 0.8;
+  }
+}
+

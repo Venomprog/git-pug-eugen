@@ -1,0 +1,44 @@
+.subscription {
+
+  &__inner {
+    padding: rem(57px) 0 rem(100px);
+  }
+
+
+  &__title {
+    text-align: center;
+  }
+  &__body-content {
+    margin-top: rem(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  &__form {
+    margin-top: rem(30px);
+    display: flex;
+    align-items: center;
+    gap: rem(18px);
+    height: rem(50px);
+  }
+
+  &__input {
+    height: 100%;
+    width: rem(400px);
+    padding: rem(12px) rem(20px);
+    border-radius: var(--border-radius);
+    border: 1.5px solid #1064E5;
+    
+  }
+  &__button {
+    height: 100%;
+    font-size: rem(14px);
+    letter-spacing: 0.3em;
+    padding: rem(12px) rem(30px);
+
+  }
+
+}
+

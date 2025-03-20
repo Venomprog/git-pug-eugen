@@ -2,7 +2,7 @@ mixin main-hero
   section.main-hero
     .main-hero__inner.container
       .main-hero__body 
-        h1.main-hero__title Цифровой документооборот <br> в три этапа:
+        h1.main-hero__title.h2 Цифровой документооборот <br> в три этапа:
         .main-hero__description
           ul.main-hero__list  
             li.main-hero__item
@@ -34,72 +34,3 @@ mixin main-hero
           span.main-hero__pagination-number          
         button.main-hero__pagination-item
           span.main-hero__pagination-number
-  .main__section
-    .main__section-inner.container
-      ul.main__section-list
-        li.main__section-item
-          .main__section-item-body
-            .main__section-item-title
-              h3.main__section-item-title-text Моментально
-            .main__section-item-text
-              p
-              | Никаких задержек. <br> 1 секунда на подписание
-          img.main__section-item-image(src="./images/speedometer.svg" alt="speedometer")
-        li.main__section-item
-          .main__section-item-body
-            .main__section-item-title
-              h3.main__section-item-title-text Глобально
-            .main__section-item-text
-              p
-              | Сервис доступен 24\7 <br>со всех устройств
-          img.main__section-item-image(src="./images/positive-vote.svg" alt="positive-vote")
-        li.main__section-item
-          .main__section-item-body
-            .main__section-item-title
-              h3.main__section-item-title-text Экономно
-            .main__section-item-text
-              p
-              | В 30 раз дешевле чем <br> почта и курьеры
-          img.main__section-item-image(src="./images/piggy-bank.svg" alt="piggy-bank")
-
-  section.form 
-    .form__inner
-      .form__body.container
-        .form__body-content
-          .form__title.h2
-            h3.form__title-text Комфорт в работе
-          .form__description
-            p.form__description-text
-              |&ndash; Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
-            p.form__description-text
-              |&ndash; Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
-            p.form__description-text
-              |&ndash; Загружай XML файл с собственным шаблоном готового документа. Это удобно!
-            p.form__description-text
-              |&ndash; Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
-            button.form__button.button
-              | Узнать больше
-        img.form__image(src="./images/form-imgRight.png" alt="form-image")
-      .form__body-reverse.container
-        .form__body-content
-          .form__title.h2
-            h3.form__title-text Наш продукт это:
-          .form__description
-            p.form__description-text
-              |&ndash; Web версия без установки программного обеспечения
-            p.form__description-text
-              |&ndash; Возможность бесплатно и безлимитно обрабатывать входящие документы
-            p.form__description-text
-              |&ndash; Простота интеграции с 1С и другими сервисами
-            p.form__description-text
-              |&ndash; Поддержка входа через Mobile ID
-            button.form__button.button.button-color
-              | Узнать больше
-        img.form__image(src="./images/form-imgLeft.png" alt="form-image")
-
-
-
-
-
-
-
