@@ -4,11 +4,19 @@
     display: flex;
     justify-content: center;
     padding: rem(75px) rem(225px);
+
+    @media #{media('<',t)} {
+      padding: rem(35px) rem(50px);
+    }
   }
 
   &-list {
     display: flex;
-    gap: 54px;
+    gap: rem(54px);
+
+    @media #{media('<',t)} {
+      column-gap: rem(20px);
+    }
   }
 
   &-item {
@@ -16,6 +24,10 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: rem(20px);
+
+    @media #{media('<',t)} {
+    align-items: flex-start;
+    }
   }
 
   &-item-title {

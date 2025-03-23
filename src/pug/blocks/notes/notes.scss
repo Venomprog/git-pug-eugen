@@ -13,6 +13,12 @@
     display: flex;
     justify-content: space-between;
     gap: rem(50px);
+
+    @media #{media('<',t)} {
+      :nth-child(3) {
+        display: none;
+      }
+    }
   }
 
   &__item-img {
@@ -34,11 +40,6 @@
   &__item-date {
     font-weight: 500;
     font-size: rem(14px);
-    
+
   }
 }
-
-
-
-
-

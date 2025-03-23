@@ -1,26 +1,27 @@
-.h2 {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 45.5px;
-  letter-spacing: 0%;
+
+
+@media #{media('<',d)} {
+  .container {
+    padding-inline: rem(50px);
+  }
 }
 
-
 .main-hero {
+  margin-top: rem(110px);
   position: relative;
-
   height: rem(676px);
 
-  @media #{media('<',d)} {
-    height: rem(516px);
+  @media #{media('<',t)} {
+    margin-top: rem(60px);
   }
-
-
-
 
 
   &__inner {
     padding-top: rem(190px);
+
+    @media #{media('<',d)} {
+      padding-top: rem(120px);
+    }
   }
 
   &__body {
@@ -29,6 +30,11 @@
     flex-direction: column;
     max-width: rem(586px);
     row-gap: rem(14px);
+
+    @media #{media('<',t)} {
+      max-width: rem(344px);
+
+    }
   }
 
 
@@ -51,6 +57,10 @@
     font-size: rem(16px);
     line-height: 130%;
     padding-right: rem(170px);
+
+    @media #{media('<',t)} {
+      padding-right: 0;
+    }
   }
 
 

@@ -11,10 +11,20 @@
     margin-top: rem(57px);
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+
+    @media #{media('<',t)} {
+      position: relative;
+      align-items: center;
+    }
   }
 
   &__body-content {
     width: rem(502px);
+
+    @media #{media('<',t)} {
+      width: rem(410px);
+    }
 
   }
 
@@ -28,6 +38,22 @@
 
   &__image {
     object-fit: none;
+
+    @media #{media('<',t)} {
+      position: absolute;
+      left: 65%;
+          
+    } 
+  }
+
+  &__image-reverse {
+    object-fit: none;
+
+    @media #{media('<',t)} {
+      position: absolute;
+      right: 65%;
+      
+    }
   }
 
   &__body-reverse {
@@ -36,6 +62,12 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     padding-bottom: rem(90px);
+
+    @media #{media('<',d)} {
+      position: relative;
+      align-items: center;
+      overflow: hidden;
+    }
   }
 
   &__button {

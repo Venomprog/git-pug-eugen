@@ -1,9 +1,19 @@
 .footer {
-  
+
+  @media #{media('>',t)} {
+    .visible-mobile {
+      display: none !important;
+    }
+  }
 
 
   a {
     color: #ffffff;
+
+    @media #{media('<',t)} {
+      font-size: rem(14px);
+      line-height: rem(24px);
+    }
   }
 
   a:hover {
@@ -17,11 +27,22 @@
     background-color: #061224;
     height: rem(288px);
     padding: rem(50px) 0;
+
+    @media #{media('<',t)} {
+      padding: rem(44px) 0;
+    }
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
+
+    @media #{media('<',t)} {
+      display: flex;
+      column-gap: rem(72px);
+      justify-content: normal;
+
+    }
   }
 
   &__row-left {
@@ -40,17 +61,32 @@
     margin-left: rem(157px);
     column-gap: rem(47px);
 
+    @media #{media('<',d)} {
+      margin-left: rem(70px);
+
+    }
+
+    @media #{media('<',t)} {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(6px);
+      margin-left: rem(52px);
+    }
+
   }
 
   &__nav-list {
     display: flex;
     flex-direction: column;
     row-gap: rem(6px);
-
   }
 
   &__nav-item:nth-child(3) {
     margin-top: rem(32px);
+
+    @media #{media('<',t)} {
+      margin-top: 0;
+    }
   }
 
 
@@ -64,7 +100,19 @@
   &__row-right {
     display: flex;
     column-gap: rem(80px);
+
+    @media #{media('<',t)} {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(6px);
+    }
+
+    @media #{media('<',t)} {
+      row-gap: 0;
+    }
   }
+
+
 
   &__contacts-mail,
   &__contacts-tel {
@@ -79,11 +127,21 @@
     font-size: rem(14px);
     line-height: rem(24px);
     opacity: 0.5;
+
+    @media #{media('<',t)} {
+      margin-top: rem(35px);
+    }
   }
+
+
 
   &__extra {
     margin-top: rem(16px);
     opacity: 0.5;
+
+    @media #{media('<',t)} {
+      display: none;
+    }
   }
 
   &__extra-inner {
@@ -101,6 +159,10 @@
 
     &:hover {
       color: #423d3d;
+    }
+
+    @media #{media('<',d)} {
+      margin-left: rem(90px);
     }
   }
 }

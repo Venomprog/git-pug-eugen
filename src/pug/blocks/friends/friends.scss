@@ -5,6 +5,16 @@
     position: relative;
     padding: rem(47px) 0 rem(60px);
     padding-inline: rem(204px);
+
+    @media #{media('<',d)} 
+    {
+      padding: rem(35px) 0 rem(40px);
+      padding-inline: rem(100px);
+    }
+
+    @media #{media('<',t)} {
+      padding-inline: rem(59px);
+    }
   }
 
   &__title {
@@ -17,6 +27,15 @@
     justify-content: space-between;
     align-items: center;
     column-gap: rem(134px);
+
+    @media #{media('<',d)} 
+    {
+      column-gap: rem(50px);
+    }
+
+    @media #{media('<',t)} {
+    gap: rem(30px);
+    }
   }
 
   &__pagination {
@@ -43,5 +62,10 @@
     &:hover {
       background-color: #1064E5;
     }
+  }
+
+  &__img {
+    width: rem(128px);
+    height: rem(118px);
   }
 }

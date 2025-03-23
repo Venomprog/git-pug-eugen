@@ -39,6 +39,9 @@ mixin footer
                 a(href="tel:+380 44 334 56 43") +380 44 334 56 43
               p  
                 a(href="tel:+380 44 338 86 43") +380 44 338 86 43
+        .footer__button-up.visible-mobile
+          button.button__up(type="button")
+            +arrow-up          
       .footer__extra
         .footer__extra-inner.container
           .footer__extra-copyright
@@ -49,3 +52,4 @@ mixin footer
               a.footer__extra-link(href="#") Договір оферти
             p
               a.footer__extra-link(href="#") Безпека сервісу
+        
