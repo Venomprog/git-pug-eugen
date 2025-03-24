@@ -6,13 +6,24 @@
   }
 }
 
+@media #{media('<',m)} {
+  .container {
+    padding-inline: rem(20px);
+  }
+}
+
 .main-hero {
   margin-top: rem(110px);
   position: relative;
   height: rem(676px);
 
   @media #{media('<',t)} {
+    
     margin-top: rem(60px);
+  }
+
+  @media #{media('<',m)} {
+    margin-top: rem(30px);
   }
 
 
@@ -21,6 +32,14 @@
 
     @media #{media('<',d)} {
       padding-top: rem(120px);
+    }
+
+    @media #{media('<',t)} {
+      padding-inline: rem(50px);
+    }
+
+    @media #{media('<',m)} {
+      padding-inline: rem(20px);
     }
   }
 

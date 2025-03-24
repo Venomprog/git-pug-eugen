@@ -33,11 +33,18 @@
   @media #{media('<',t)} {
     .header__inner {
       width: 100%;
-      padding: rem(35px);
+      padding: rem(35px) rem(50px);
+
     }
 
     .header__actions {
       gap: rem(10px);
+    }
+  }
+
+  @media #{media('<',m)} {
+    .header__inner {   
+      padding-inline: rem(20px);
     }
   }
 
