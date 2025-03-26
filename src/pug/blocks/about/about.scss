@@ -12,68 +12,111 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    align-items: center;
 
     @media #{media('<',t)} {
       position: relative;
       align-items: center;
     }
+
+    @media #{media('<',m)} {
+      .container {
+        padding-inline: rem(20px);
+      }
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
-  &__body-content {
-    width: rem(502px);
+  
 
-    @media #{media('<',t)} {
-      width: rem(410px);
+    &__description {
+      margin-top: rem(20px);
+      width: rem(530px);
+      row-gap: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      @media #{media('<',m)} {
+        text-align: start;
+        padding-inline: rem(20px);
+      }
     }
 
-  }
+    &__image {
+      @media #{media('<',d)} {
+        position: relative;
+        left: 0;
+      }
 
-  &__description {
-    margin-top: rem(20px);
-    row-gap: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
+      @media #{media('<',t)} {
+        margin-top: rem(30px);
+      }
+    }
 
-  &__image {
-    object-fit: none;
+    &__title-text {
+      @media #{media('<',m)} {
+        text-align: center;
+      }
+    }
 
-    @media #{media('<',t)} {
-      position: absolute;
-      left: 65%;
-          
+    
+    &__description-text {
+      font-weight: 400;
+      font-size: rem(18px);
+      line-height: rem(28px);
+
+      @media #{media('<',m)} {
+        font-size: rem(14px);
+        line-height: 130%;
+      }
     } 
-  }
 
-  &__image-reverse {
-    object-fit: none;
+    &__image-reverse {
+      object-fit: none;
 
-    @media #{media('<',t)} {
-      position: absolute;
-      right: 65%;
-      
+      @media #{media('<',d)} {
+        position: relative;
+        right: 0;
+
+      }
+    }
+
+  &__button-item{
+    @media #{media('<',m)} {
+      display: flex;
+      justify-content: center;
     }
   }
 
-  &__body-reverse {
-    padding-top: rem(57px);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding-bottom: rem(90px);
 
-    @media #{media('<',d)} {
-      position: relative;
-      align-items: center;
-      overflow: hidden;
+    &__body-reverse {
+      padding-top: rem(57px);
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      padding-bottom: rem(90px);
+      gap: rem(20px);
+
+      @media #{media('<',d)} {
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      @media #{media('<',m)} {
+        .container {
+          padding-inline: rem(20px);
+        }
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    &__button {
+      margin-top: rem(16px);
+      padding: rem(10px) rem(40px);
     }
   }
 
-  &__button {
-    margin-top: rem(16px);
-    padding: rem(10px) rem(40px);
-  }
-
-
-}

@@ -56,6 +56,13 @@
     }
   }
 
+  &__actions {
+    @media #{media('<',m)} {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
 
   &__description-body {
     margin-top: rem(14px);

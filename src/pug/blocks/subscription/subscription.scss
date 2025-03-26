@@ -2,6 +2,10 @@
 
   &__inner {
     padding: rem(57px) 0 rem(100px);
+
+    @media #{media('<',m)} {
+      padding-inline: rem(20px);
+    }
   }
 
 
@@ -22,6 +26,14 @@
     align-items: center;
     gap: rem(18px);
     height: rem(50px);
+
+    @media #{media('<',m)} {
+      flex-direction: column;
+    }
+  }
+
+  &__description {
+    text-align: center;
   }
 
   &__input {

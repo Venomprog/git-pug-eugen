@@ -1,5 +1,9 @@
 .main__advantages {
 
+  img {
+    vertical-align: top; /* или middle / bottom */
+  }
+  
   &-inner {
     display: flex;
     justify-content: center;
@@ -17,6 +21,11 @@
     @media #{media('<',t)} {
       column-gap: rem(20px);
     }
+
+    @media #{media('<',m)} {
+      flex-direction: column;
+      row-gap: rem(36px);
+    }
   }
 
   &-item {
@@ -26,7 +35,14 @@
     gap: rem(20px);
 
     @media #{media('<',t)} {
-    align-items: flex-start;
+      align-items: flex-start;
+      gap: rem(15px);
+    }
+
+    @media #{media('<',m)} {
+      gap: rem(33px);
+      align-items: center;
+      justify-content: flex-end;
     }
   }
 

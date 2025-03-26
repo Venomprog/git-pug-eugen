@@ -23,7 +23,8 @@ mixin main-hero
             .main-hero__description-text
               p
               | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
-      button.main-hero__button-register.button.button-color ПОПРОБОВАТЬ БЕСПЛАТНО
+      .main-hero__actions
+        button.main-hero__button-register.button.button-color(data-modal-open="modal-register") ПОПРОБОВАТЬ БЕСПЛАТНО
     .main-hero__image
       img.main-hero__image-img(src="./images/main-image.png" alt="")
     .main-hero__pagination

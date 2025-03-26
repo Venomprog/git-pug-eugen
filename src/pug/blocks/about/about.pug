@@ -3,7 +3,7 @@ mixin main-about
     .about__inner
       .about__body.container
         .about__body-content
-          .about__title.h2
+          .about__title.title-medium
             h3.about__title-text Комфорт в работе
           .about__description
             p.about__description-text
@@ -14,12 +14,13 @@ mixin main-about
               |&ndash; Загружай XML файл с собственным шаблоном готового документа. Это удобно!
             p.about__description-text
               |&ndash; Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+          .about__button-item
             button.about__button.button
               | Узнать больше
-        img.about__image(src="./images/form-imgRight.png" alt="form-image")
+        img.about__image(src="./images/form-imgRight.png " alt="form-image")
       .about__body-reverse.container
         .about__body-content
-          .about__title.h2
+          .about__title.title-medium
             h3.about__title-text Наш продукт это:
           .about__description
             p.about__description-text
@@ -30,6 +31,7 @@ mixin main-about
               |&ndash; Простота интеграции с 1С и другими сервисами
             p.about__description-text
               |&ndash; Поддержка входа через Mobile ID
+          .about__button-item
             button.about__button.button.button-color
               | Узнать больше
         img.about__image-reverse(src="./images/form-imgLeft.png" alt="form-image")

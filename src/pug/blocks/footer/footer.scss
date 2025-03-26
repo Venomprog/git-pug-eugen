@@ -25,11 +25,16 @@
   &__inner {
     color: #ffffff;
     background-color: #061224;
-    height: rem(288px);
+    height: auto;
     padding: rem(50px) 0;
 
     @media #{media('<',t)} {
       padding: rem(44px) 0;
+    }
+
+    @media #{media('<',m)} {
+      padding: rem(20px) 0;
+
     }
   }
 
@@ -41,12 +46,20 @@
       display: flex;
       column-gap: rem(72px);
       justify-content: normal;
+    }
 
+    @media #{media('<',m)} {
+      position: relative;
+      flex-direction: column;
     }
   }
 
   &__row-left {
     display: flex;
+
+    @media #{media('<',m)} {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -73,12 +86,29 @@
       margin-left: rem(52px);
     }
 
+    @media #{media('<',m)} {
+      margin-left: 0;
+    }
+
   }
 
   &__nav-list {
     display: flex;
     flex-direction: column;
-    row-gap: rem(6px);
+    gap: rem(6px);
+
+    @media #{media('<',m)} {
+      margin-top: 20px;
+      height: rem(70px);
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &__nav-item {
+    @media #{media('<',m)} {
+      width: 30%;
+    }
   }
 
   &__nav-item:nth-child(3) {
@@ -87,6 +117,7 @@
     @media #{media('<',t)} {
       margin-top: 0;
     }
+
   }
 
 
@@ -133,7 +164,15 @@
     }
   }
 
+  &__button-up{
 
+    @media #{media('<',m)} {
+      position: absolute;
+      right:0;
+      padding-inline: rem(20px);
+    }
+    
+  }
 
   &__extra {
     margin-top: rem(16px);
@@ -165,4 +204,6 @@
       margin-left: rem(90px);
     }
   }
+
+
 }

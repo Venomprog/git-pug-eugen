@@ -24,8 +24,7 @@
   &__list {
     margin-top: rem(46px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     column-gap: rem(134px);
 
     @media #{media('<',d)} 
@@ -36,13 +35,31 @@
     @media #{media('<',t)} {
     gap: rem(30px);
     }
+
+    @media #{media('<',m)} {
+      margin-top: rem(30px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+
+    
 
   &__pagination {
     position: absolute;
     bottom: rem(50px);
     left: 50%;
     transform: translateX(-50%);
+
+    @media #{media('<',m)} {
+      bottom: rem(20px);
+    }
   }
 
   &__pagination-items {
