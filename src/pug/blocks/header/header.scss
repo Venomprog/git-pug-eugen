@@ -34,6 +34,7 @@
   }
 
   @media #{media('<',t)} {
+    //FIXME: Для чего это здесь? ты же выше стили для Иннера пишешь
     .header__inner {
       width: 100%;
       padding: rem(35px) rem(50px);
@@ -77,9 +78,13 @@
     width: rem(27px);
     height: rem(27px);
     aspect-ratio: 1;
+
+    //FIXME:Для Спана - стили здесь пиши
   }
 
   &__button-burger span {
+
+    //FIXME: Вынести это выше
     position: absolute;
     left: 0;
     width: 100%;
@@ -90,6 +95,7 @@
   }
 
   &__button-burger span:nth-child(1) {
+    //FIXME: Аналогично как выше писал
     top: 0;
   }
 
@@ -100,6 +106,8 @@
 
   &__menu {
     flex-shrink: 0;
+
+    ////FIXME: Все меню-листы и тд писать дальше здесь а не отдельно
   }
 
   &__menu-list {
@@ -111,6 +119,7 @@
 
   }
 
+  //FIXME: Это должно быть выше
   @media #{media('<',d)} {
     &__menu-list {
       margin-left: rem(20px);
@@ -119,6 +128,10 @@
   }
 
   &__menu-item {
+
+    //FIXME: Вынести выше
+
+
     &:nth-child(4) {
       margin-left: rem(24px);
 

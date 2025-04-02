@@ -6,6 +6,7 @@ mixin main-hero
         .main-hero__description
           ul.main-hero__list  
             li.main-hero__item
+              //FIXME: это не кнопки - а просто элементы, будут анимироваться
               button.main-hero__button
                 | 1 
             span.main-hero__number 
@@ -24,6 +25,7 @@ mixin main-hero
               p
               | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
       .main-hero__actions
+        //FIXME: Это сделать миксином
         button.main-hero__button-register.button.button-color(data-modal-open="modal-register") ПОПРОБОВАТЬ БЕСПЛАТНО
     .main-hero__image
       img.main-hero__image-img(src="./images/main-image.png" alt="")

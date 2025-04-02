@@ -29,6 +29,7 @@ mixin footer
                 a(href="Facebook") Facebook
           .footer__contacts 
             address.footer__contacts-tel
+              //FIXME: Почему без класса?
               p  
                 | пр-т Миколи Бажана, 14, 
                 br
@@ -40,6 +41,7 @@ mixin footer
               p  
                 a(href="tel:+380 44 338 86 43") +380 44 338 86 43
         .footer__button-up.visible-mobile
+          //FIXME: В миксин
           button.button__up(type="button")
             +arrow-up          
       .footer__extra

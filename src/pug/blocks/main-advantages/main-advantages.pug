@@ -1,14 +1,18 @@
 mixin main-advantages
+  //FIXME: .main-advantages  вместо .main__advantages
   section.main__advantages
     .main__advantages-inner.container
       ul.main__advantages-list
         li.main__advantages-item
+          //FIXME: не по БЭМ - пошёл шашлык
           .main__advantages-item-body
             .main__advantages-item-title
+              //FIXME: Ужасный шашлык
               h3.main__advantages-item-title-text Моментально
             .main__advantages-item-text
               p
               | Никаких задержек. <br> 1 секунда на подписание
+          //FIXME: Шашлык
           img.main__advantages-item-image(src="./images/speedometer.svg" alt="speedometer")
         li.main__advantages-item
           .main__advantages-item-body
@@ -18,6 +22,7 @@ mixin main-advantages
               p
               | Сервис доступен 24\7 <br>со всех устройств
           img.main__advantages-item-image(src="./images/positive-vote.svg" alt="positive-vote")
+        //FIXME: Исправить БЭМ
         li.main__advantages-item
           .main__advantages-item-body
             .main__advantages-item-title
