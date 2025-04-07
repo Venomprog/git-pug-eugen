@@ -90,62 +90,62 @@
       margin-left: 0;
     }
 
-  }
-
-  &__nav-list {
-    //FIXME: Лучше поднять в нав
-    display: flex;
-    flex-direction: column;
-    gap: rem(6px);
-
-    @media #{media('<',m)} {
-      margin-top: 20px;
-      height: rem(70px);
-      flex-wrap: wrap;
-    }
-
-  }
-
-  &__nav-item {
-    //FIXME: Лучше внутри нава
-    @media #{media('<',m)} {
-      width: 30%;
-    }
-  }
-
-  &__nav-item:nth-child(3) {
-    //FIXME: внутри айтема лучше писать
-    margin-top: rem(32px);
-
-    @media #{media('<',t)} {
-      margin-top: 0;
-    }
-
-  }
-
-
-  &__nav-link {
-    font-family: $font;
-    font-weight: 500;
-    font-size: rem(14px);
-    line-height: rem(24px);
-  }
-
-  &__row-right {
-    display: flex;
-    column-gap: rem(80px);
-
-    @media #{media('<',t)} {
+    &-list {
+      //FIXME: Лучше поднять в нав
       display: flex;
       flex-direction: column;
-      row-gap: rem(6px);
+      gap: rem(6px);
+
+      @media #{media('<',m)} {
+        margin-top: 20px;
+        height: rem(70px);
+        flex-wrap: wrap;
+      }
+
     }
 
-    @media #{media('<',t)} {
-      row-gap: 0;
+
+    &__nav-item {
+
+      //FIXME: Лучше внутри нава
+      @media #{media('<',m)} {
+        width: 30%;
+      }
+
+
+      :nth-child(3) {
+        //FIXME: внутри айтема лучше писать
+        margin-top: rem(32px);
+
+        @media #{media('<',t)} {
+          margin-top: 0;
+        }
+
+      }
+    }
+
+    &__nav-link {
+      font-family: $font;
+      font-weight: 500;
+      font-size: rem(14px);
+      line-height: rem(24px);
+    }
+
+    &__row-right {
+      display: flex;
+      column-gap: rem(80px);
+
+      @media #{media('<',t)} {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(6px);
+      }
+
+      @media #{media('<',t)} {
+        row-gap: 0;
+      }
     }
   }
-
 
 
   &__contacts-mail,
@@ -167,14 +167,13 @@
     }
   }
 
-  &__button-up{
-
+  &__button {
     @media #{media('<',m)} {
       position: absolute;
-      right:0;
+      right: 0;
       padding-inline: rem(20px);
     }
-    
+
   }
 
   &__extra {

@@ -12,12 +12,13 @@
   &__title {
     text-align: center;
   }
+
   &__body-content {
     margin-top: rem(30px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
   }
 
   &__form {
@@ -36,21 +37,26 @@
     text-align: center;
   }
 
-  &__input {
-    height: 100%;
+  &__input-size{
     width: rem(400px);
+
+    @media #{media('<',m)} {
+      width: rem(280px);
+    }
+  }
+
+  &__input {
+    width: 100%;
     padding: rem(12px) rem(20px);
     border-radius: var(--border-radius);
     border: 1.5px solid #1064E5;
-    
   }
+
   &__button {
     height: 100%;
     font-size: rem(14px);
     letter-spacing: 0.3em;
     padding: rem(12px) rem(30px);
-
   }
 
 }
-

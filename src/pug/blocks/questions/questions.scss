@@ -4,6 +4,7 @@
     background-color: rgba(222, 238, 252, 1);
 
     @media #{media('<',m)} {
+      padding-inline: rem(20px);
       background-color: #D8F1F0;
     }
   }
@@ -24,6 +25,10 @@
   &__item {
     width: rem(527px);
     list-style: none;
+
+    @media #{media('<',m)} {
+      width: 100%;
+    }
   }
 
   &__details {

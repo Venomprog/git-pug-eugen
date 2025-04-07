@@ -7,7 +7,9 @@ mixin subscription
         p.subscription__description
           | Введи свой электронный адрес и будь в курсе всех обновлений
         form.subscription__form
-          input.subscription__input.input(type="email" placeholder="Введите ваш email")
-          //FIXME: В миксин
-          button.subscription__button.button.button-color(type="submit")
-            | ПОДПИСАТЬСЯ
+          .subscription__input-size
+            input.subscription__input.input(type="email" placeholder="Введите ваш email")
+            //FIXME: В миксин
+          .subscription__button-size
+            +button('ПОДПИСАТЬСЯ', 'button', 'btn btn--blue btn--medium') 
+

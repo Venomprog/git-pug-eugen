@@ -1,0 +1,8 @@
+mixin faq-item(question, answer, isOpen=false)
+  li.questions__item 
+    details.questions__details(open=isOpen)
+      summary.questions__summary
+        span.questions__details-indicator
+        h3.questions__summary-title= question
+      .questions__content
+        p= answer

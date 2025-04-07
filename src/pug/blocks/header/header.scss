@@ -25,31 +25,23 @@
   &__inner {
     padding: rem(36px) rem(104px);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #DEEEFC;
 
-    
-
-  }
-
-  @media #{media('<',t)} {
-    //FIXME: Для чего это здесь? ты же выше стили для Иннера пишешь
-    .header__inner {
-      width: 100%;
-      padding: rem(35px) rem(50px);
-
+    @media #{media('<',t)} {
+      justify-content: space-between;
+      padding-inline: rem(50px);
     }
 
-    .header__actions {
-      gap: rem(10px);
-    }
-  }
-
-  @media #{media('<',m)} {
-    .header__inner {   
+    @media #{media('<',m)} {
       padding-inline: rem(20px);
     }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: rem(10px);
+    margin-left: rem(32px);
   }
 
   @media #{media('<',t)} {
@@ -59,14 +51,6 @@
     .header__menu-item {
       display: none !important;
     }
-  }
-
-  .button {
-    border-radius: var(--border-radius);
-    padding: rem(8px) rem(32px);
-    width: fit-content;
-    letter-spacing: 0.04em;
-
   }
 
 
@@ -79,98 +63,77 @@
     height: rem(27px);
     aspect-ratio: 1;
 
-    //FIXME:Для Спана - стили здесь пиши
-  }
+    span {
 
-  &__button-burger span {
+      //FIXME: Вынести это выше
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: rem(3px);
+      background: #1064E5;
+      border-radius: rem(10px);
+      bottom: 0;
+    }
 
-    //FIXME: Вынести это выше
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: rem(3px);
-    background: #1064E5;
-    border-radius: rem(10px);
-    bottom: 0;
-  }
+    span:nth-child(1) {
+      //FIXME: Аналогично как выше писал
+      top: 0;
+    }
 
-  &__button-burger span:nth-child(1) {
-    //FIXME: Аналогично как выше писал
-    top: 0;
-  }
-
-  &__button-burger span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
+    span:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &__menu {
     flex-shrink: 0;
 
-    ////FIXME: Все меню-листы и тд писать дальше здесь а не отдельно
-  }
-
-  &__menu-list {
-    margin-left: rem(182px);
-    display: flex;
-    align-items: center;
-    gap: rem(34px);
-    letter-spacing: 0.04em;
-
-  }
-
-  //FIXME: Это должно быть выше
-  @media #{media('<',d)} {
-    &__menu-list {
-      margin-left: rem(20px);
-      gap: rem(20px);
-    }
-  }
-
-  &__menu-item {
-
-    //FIXME: Вынести выше
-
-
-    &:nth-child(4) {
-      margin-left: rem(24px);
+    &-list {
+      margin-left: rem(182px);
+      display: flex;
+      align-items: center;
+      gap: rem(34px);
+      letter-spacing: 0.04em;
 
       @media #{media('<',d)} {
-        margin-left: rem(10px);
+        margin-left: rem(40px);
+        gap: rem(20px);
       }
     }
-  }
-
-  &__menu-link {
-    display: flex;
-    align-items: center;
-    gap: rem(5px);
-
-    font-weight: 500;
-    font-size: rem(14px);
-    line-height: rem(24px);
 
 
-    &:hover {
-      .header__arrow-down {
-        rotate: 180deg;
-        transition: rotate 0.3s ease-in-out;
-        cursor: pointer;
+    &-item {
+      &:nth-child(4) {
+        margin-left: rem(24px);
+
+        @media #{media('<',d)} {
+          margin-left: rem(10px);
+        }
+      }
+
+
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: rem(5px);
+
+      font-weight: 500;
+      font-size: rem(14px);
+      line-height: rem(24px);
+
+
+      &:hover {
+        .header__arrow-down {
+          rotate: 180deg;
+          transition: rotate 0.3s ease-in-out;
+          cursor: pointer;
+        }
       }
     }
-  }
-
-  &__button-enter {
-    margin-left: rem(32px);
-    background-color: #fff;
-
-    @media #{media('<',d)} {
-      margin-left: 0;
-    }
-
 
   }
-
-
 
 }

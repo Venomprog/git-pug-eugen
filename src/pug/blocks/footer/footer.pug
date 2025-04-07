@@ -30,28 +30,28 @@ mixin footer
           .footer__contacts 
             address.footer__contacts-tel
               //FIXME: Почему без класса?
-              p  
+              p.footer__contacts-text 
                 | пр-т Миколи Бажана, 14, 
                 br
                 | А Київ, 02072
-              p  
+              p.footer__contacts-text  
                 a(href="tel:0 800 750643") 0 800 750643
-              p  
+              p.footer__contacts-text  
                 a(href="tel:+380 44 334 56 43") +380 44 334 56 43
-              p  
+              p.footer__contacts-text  
                 a(href="tel:+380 44 338 86 43") +380 44 338 86 43
-        .footer__button-up.visible-mobile
+        .footer__button.visible-mobile
           //FIXME: В миксин
-          button.button__up(type="button")
-            +arrow-up          
+          +button('', 'button', 'button__up')
+            +arrow-up
       .footer__extra
         .footer__extra-inner.container
           .footer__extra-copyright
-            p
+            p.footer__extra-text
               |© <time datetime="2020">2020</time> Signy
           .footer__extra-right
-            p
+            p.footer__extra-text
               a.footer__extra-link(href="#") Договір оферти
-            p
+            p.footer__extra-text
               a.footer__extra-link(href="#") Безпека сервісу
         

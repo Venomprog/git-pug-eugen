@@ -8,50 +8,54 @@ mixin signatures
           li.signatures__item
             .signatures__item-title.title-small
               //FIXME: Шашлык не по БЭМ
-              h3.signatures__item-title-text Demo
+              h3.signatures__item-h3 Demo
             .signatures__item-description
-              p.signatures__item-description-text
+              p.signatures__item-text
                 |30 документів
               //FIXME: Шашлык не по БЭМ
-              .signatures__item-description-price
-                p.price-large
+              .signatures__item-price
+                p.price-large.title-medium
                   |0
                 p.price-text
                   |грн/місяць
-            button.signatures__item-button.button.button-color ЗАРЕГИСТРИРОВАТЬСЯ
+            .signatures__button    
+              +button('ЗАРЕГИСТРИРОВАТЬСЯ', 'button', 'btn btn--blue btn--current') 
           li.signatures__item
             .signatures__item-title.title-small
               //FIXME: Не по БЭМ
-              h3.signatures__item-title-text Business
+              h3.signatures__item-h3 Business
             .signatures__item-description
-              p.signatures__item-description-text
+              p.signatures__item-text
                 |30 документів
-              .signatures__item-description-price
-                p.price-large
+              .signatures__item-price
+                p.price-large.title-medium
                   |1 000
                 p.price-text
                   |грн/місяць
             //FIXME: В Миксин
-            button.signatures__item-button.button.button-color ЗАКАЗАТЬ
+            .signatures__button  
+              +button('ЗАКАЗАТЬ', 'button', 'btn btn--blue btn--current') 
           //FIXME: Править шашлыки
           li.signatures__item
             .signatures__item-title.title-small
-              h3.signatures__item-title-text Pro
+              h3.signatures__item-h3 Pro
             .signatures__item-description
-              p.signatures__item-description-text
+              p.signatures__item-text
                 |30 документів
-              .signatures__item-description-price
-                p.price-large
+              .signatures__item-price
+                p.price-large.title-medium
                   |9 000
                 p.price-text
                   |грн/місяць
             //FIXME: В миксин
-            button.signatures__item-button.button.button-color ЗАКАЗАТЬ
+            .signatures__button  
+              +button('ЗАКАЗАТЬ', 'button', 'btn btn--blue btn--current') 
           li.signatures__item
             .signatures__item-title.title-small
-              h3.signatures__item-title-text Individual
+              h3.signatures__item-h3 Individual
             .signatures__item-description
-              p.signatures__item-description-text
+              p.signatures__item-text
                 |Необмежена кількість документів
-              .signatures__item-description-price
-              button.signatures__item-button.button.button-color СВЯЗАТЬСЯ С НАМИ      
+              .signatures__item-price
+              .signatures__button  
+                +button('СВЯЗАТЬСЯ С НАМИ ', 'button', 'btn btn--blue btn--current')     

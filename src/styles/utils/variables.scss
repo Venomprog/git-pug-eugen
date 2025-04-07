@@ -224,33 +224,9 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
-.button {
-
-  font-weight: 500;
-  font-size: rem(14px);
-  line-height: rem(24px);
-  text-align: center;
-  border: 1.5px solid #1064E5;
-  border-radius: var(--border-radius);
-
-  &:hover {
-    color: #2b5a8f;
-  }
-
-}
-
-.button-color {
-  background-color: #1064E5;
-  color: #fff;
-  width: fit-content;
-
-}
 
 
 
-a:hover {
-  color: var(--color-light-gray);
-}
 
 p {
   margin-block: 0;

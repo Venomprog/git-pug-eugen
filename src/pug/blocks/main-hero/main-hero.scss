@@ -1,5 +1,3 @@
-
-
 @media #{media('<',d)} {
   .container {
     padding-inline: rem(50px);
@@ -14,11 +12,12 @@
 
 .main-hero {
   margin-top: rem(110px);
+  display: flex;
+  align-items: center;
   position: relative;
   height: rem(676px);
 
   @media #{media('<',t)} {
-    
     margin-top: rem(60px);
   }
 
@@ -28,11 +27,6 @@
 
 
   &__inner {
-    padding-top: rem(190px);
-
-    @media #{media('<',d)} {
-      padding-top: rem(120px);
-    }
 
     @media #{media('<',t)} {
       padding-inline: rem(50px);
@@ -52,11 +46,21 @@
 
     @media #{media('<',t)} {
       max-width: rem(344px);
+    }
 
+  }
+
+  &__title {
+    @media #{media('<',m)} {
+      font-size: rem(25px);
+      line-height: rem(26px);
     }
   }
 
   &__actions {
+
+    margin-top: rem(31px);
+
     @media #{media('<',m)} {
       display: flex;
       justify-content: center;
@@ -64,32 +68,32 @@
   }
 
 
-  &__description-body {
+  &__info {
     //FIXME: Нужен блок Дескрипшн и там всего его элементы
     margin-top: rem(14px);
     display: flex;
     flex-direction: column;
     gap: rem(14px);
-  }
 
-  &__description-title {
-    font-weight: 500;
-    font-size: rem(24px);
-    line-height: 130%;
-  }
-
-  &__description-text {
-    margin-top: rem(14px);
-    font-weight: 400;
-    font-size: rem(16px);
-    line-height: 130%;
-    padding-right: rem(170px);
-
-    @media #{media('<',t)} {
-      padding-right: 0;
+    &-title {
+      font-weight: 500;
+      font-size: rem(24px);
+      line-height: 130%;
     }
-  }
 
+    &-text {
+      margin-top: rem(14px);
+      font-weight: 400;
+      font-size: rem(16px);
+      line-height: 130%;
+      padding-right: rem(170px);
+
+      @media #{media('<',t)} {
+        padding-right: 0;
+      }
+    }
+
+  }
 
   &__list {
     height: rem(31px);
@@ -127,15 +131,14 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+
+    &-img {
+      width: 100%;
+      height: rem(676px);
+      object-fit: cover;
+    }
+
   }
-
-
-  &__image-img {
-    width: 100%;
-    height: rem(676px);
-    object-fit: cover;
-  }
-
 
   &__button-register {
     margin-top: rem(31px);
@@ -164,6 +167,7 @@
     border-radius: 50%;
     border: 2px solid #1064E5;
     background-color: #DEEEFC;
+    cursor: pointer;
 
     &:hover {
       background-color: #1064E5;

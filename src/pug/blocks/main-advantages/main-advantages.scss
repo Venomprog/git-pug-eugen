@@ -1,7 +1,7 @@
 .main__advantages {
 
   img {
-    vertical-align: top; /* или middle / bottom */
+    vertical-align: middle; /* или middle / bottom */
   }
   
   &-inner {
@@ -46,12 +46,12 @@
     }
   }
 
-  &-item-title {
+  &-title {
     font-weight: 500;
     font-size: rem(24px);
   }
 
-  &-item-text {
+  &-text {
     font-weight: 400;
     font-size: rem(16px);
     line-height: 130%;

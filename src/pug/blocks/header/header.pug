@@ -19,10 +19,8 @@ mixin header
             a.header__menu-link(href="#") КОНТАКТЫ
       .header__actions
         //FIXME: В миксин
-        button.header__button-enter.button
-          span.header__button-text ВХОД
-        button.header__button-register.button.button-color
-          span.header__button-text РЕГИСТРАЦИЯ
+        +button('ВХОД', 'button', 'btn btn--small')   
+        +button('РЕГИСТРАЦИЯ', 'button', 'btn btn--blue btn--small')
       .header__menu-item
         .header__menu-link(href="#") РУС
           span.header__arrow-down

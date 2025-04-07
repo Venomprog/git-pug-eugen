@@ -7,16 +7,38 @@
   &__body {
     text-align: center;
     padding: rem(43px) 0 rem(43px) 0;
+
+    
   }
 
   &__total {
     line-height: normal;
+
+    @media #{media('<',t)} {
+      font-size: rem(56px);
+      
+    }
+    @media #{media('<',m)} {
+
+      font-size: rem(36px);
+    }
+  }
+
+  &__title {
+    @media #{media('<',m)} {
+      font-size: rem(20px);
+    }
   }
 
   &__text {
     font-size: rem(18px);
     font-weight: 300;
     line-height: 1.2;
+
+    @media #{media('<',m)} {
+      font-size: rem(14px);
+      line-height: rem(22px);
+    }
   }
 
 
