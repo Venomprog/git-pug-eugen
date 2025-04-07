@@ -14,9 +14,10 @@
     justify-content: space-between;
     overflow: hidden;
     align-items: center;
+    gap: rem(30px);
 
-      @media #{media('<',t)} {
-      flex-direction: row;
+    @media #{media('<',t)} {
+      gap: rem(40px);
     }
 
     @media #{media('<',m)} {
@@ -26,18 +27,21 @@
 
       justify-content: center;
       flex-direction: column;
-    } 
-  }
-
-/*  &__body-content{
-    @media #{media('<',t)} {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
     }
   }
 
-*/
+  &__body-content {
+    @media #{media('<',t)} {
+      flex: 1;
+      max-width: 60%;
+    }
+
+    @media #{media('<',m)} {
+      max-width: none;
+    }
+  }
+
+
 
   &__description {
     margin-top: rem(20px);
@@ -59,17 +63,34 @@
   }
 
   &__image {
+
+    @media #{media('<',d)} {
+      margin-right: rem(-100px);
+    }
+
     @media #{media('<',t)} {
-      position: absolute;
-      right: -30%;
+      margin-right: rem(-250px);
     }
 
     @media #{media('<',m)} {
-      margin-top: rem(31px);
-      position: unset;
+      margin-inline: auto;
+
+    }
+  }
+
+  &__image-reverse {
+
+    @media #{media('<',d)} {
+      margin-left: rem(-100px);
     }
 
+    @media #{media('<',t)} {
+      margin-left: rem(-250px);
+    }
 
+    @media #{media('<',m)} {
+      margin-inline: auto;
+    }
   }
 
   &__title-text {
@@ -92,7 +113,7 @@
     }
   }
 
- 
+
 
   &__button-item {
     margin-top: rem(19px);
@@ -113,8 +134,15 @@
     flex-direction: row-reverse;
     overflow: hidden;
     align-items: center;
+    gap: rem(30px);
+    padding-bottom: rem(90px);
 
-    
+    @media #{media('<',t)} {
+      gap: rem(40px);
+      padding-bottom: rem(44px);
+    }
+
+
 
     @media #{media('<',m)} {
       .container {
