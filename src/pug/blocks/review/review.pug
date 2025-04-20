@@ -1,9 +1,8 @@
-//FIXME: Странное название миксина - придумать попроще
-mixin review 
-  section.review 
-    h2.review__title.title-medium 
-        | Познакомимся в живую?
+mixin review
+  section.review
+    h2.review__title.title-medium
+      | Познакомимся в живую?
     .review__inner
       //FIXME: Исправить путь - ошибка в консоли// эта ошибка так как нет видео, оставил просто для примера
-      video.review__video(src="video/review.mp4" poster="./images/video-review.png")  
-      button.review__button(type="button") 
+      video.review__video(src='video/review.mp4', poster='./images/video-review.png') 
+      button.review__button(type='button') 

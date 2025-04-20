@@ -1,39 +1,37 @@
 mixin main-hero
   section.main-hero
     .main-hero__inner.container
-      .main-hero__body 
+      .main-hero__body
         h1.main-hero__title.title-medium Цифровой документооборот <br> в три этапа:
         .main-hero__description
-          ul.main-hero__list  
+          ul.main-hero__list
             li.main-hero__item
-              //FIXME: это не кнопки - а просто элементы, будут анимироваться
               .main-hero__button
-                | 1 
-            span.main-hero__number 
+                | 1
+            span.main-hero__number
               +line
             li.main-hero__item
               .main-hero__button
-                | 2 
-            span.main-hero__number 
+                | 2
+            span.main-hero__number
               +line
-            li.main-hero__item  
+            li.main-hero__item
               .main-hero__button
-                | 3 
+                | 3
           .main-hero__info
             h3.main-hero__info-title Быстрая регистрация
             .main-hero__info-text
               p
-              | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!                  
+              | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!
       .main-hero__actions
-        //FIXME: Это сделать миксином
         +button('ПОПРОБОВАТЬ БЕСПЛАТНО', 'button', 'btn btn--blue btn--medium') 
     .main-hero__image
-      img.main-hero__image-img(src="./images/main-image.png" alt="")
+      img.main-hero__image-img(src='./images/main-image.png', alt='')
       .main-hero__pagination
         .main-hero__pagination-items
           button.main-hero__pagination-item
-            span.main-hero__pagination-number       
+            span.main-hero__pagination-number
           button.main-hero__pagination-item
-            span.main-hero__pagination-number          
+            span.main-hero__pagination-number
           button.main-hero__pagination-item
             span.main-hero__pagination-number

@@ -91,7 +91,6 @@
     }
 
     &-list {
-      //FIXME: Лучше поднять в нав
       display: flex;
       flex-direction: column;
       gap: rem(6px);
@@ -107,14 +106,12 @@
 
     &__nav-item {
 
-      //FIXME: Лучше внутри нава
       @media #{media('<',m)} {
         width: 30%;
       }
 
 
       :nth-child(3) {
-        //FIXME: внутри айтема лучше писать
         margin-top: rem(32px);
 
         @media #{media('<',t)} {

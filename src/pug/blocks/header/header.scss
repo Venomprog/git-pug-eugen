@@ -1,5 +1,4 @@
 .header {
-
   position: fixed;
   width: 100%;
   max-width: 100vw;
@@ -26,7 +25,8 @@
     padding: rem(36px) rem(104px);
     display: flex;
     align-items: center;
-    background-color: #DEEEFC;
+    //FIXME: цвет хедера - прозрачный
+    background-color: #deeefc;
 
     @media #{media('<',t)} {
       justify-content: space-between;
@@ -45,14 +45,12 @@
   }
 
   @media #{media('<',t)} {
-
     .header__menu,
     .header__actions,
     .header__menu-item {
       display: none !important;
     }
   }
-
 
   &__button-burger {
     position: relative;
@@ -64,19 +62,16 @@
     aspect-ratio: 1;
 
     span {
-
-      //FIXME: Вынести это выше
       position: absolute;
       left: 0;
       width: 100%;
       height: rem(3px);
-      background: #1064E5;
+      background: #1064e5;
       border-radius: rem(10px);
       bottom: 0;
     }
 
     span:nth-child(1) {
-      //FIXME: Аналогично как выше писал
       top: 0;
     }
 
@@ -102,7 +97,6 @@
       }
     }
 
-
     &-item {
       &:nth-child(4) {
         margin-left: rem(24px);
@@ -111,8 +105,6 @@
           margin-left: rem(10px);
         }
       }
-
-
     }
 
     &-link {
@@ -124,7 +116,6 @@
       font-size: rem(14px);
       line-height: rem(24px);
 
-
       &:hover {
         .header__arrow-down {
           rotate: 180deg;
@@ -133,7 +124,5 @@
         }
       }
     }
-
   }
-
 }

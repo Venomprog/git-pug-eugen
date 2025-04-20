@@ -15,7 +15,6 @@ mixin main-about
             p.about__description-text
               |&ndash; Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
           .about__button-item
-            //FIXME: Кнопка - должна быть миксионом
             +button('УЗНАТЬ БОЛЬШЕ', 'button', 'btn btn--medium') 
         .about__image                   
           img.about__img(src="./images/form-imgRight.png " alt="form-image")
@@ -33,9 +32,7 @@ mixin main-about
             p.about__description-text
               |&ndash; Поддержка входа через Mobile ID
           .about__button-item
-            //FIXME: Кнопка - должна быть миксионом
             +button('ЗАРЕГИСТРИРОВАТЬСЯ', 'button', 'btn btn--blue btn--medium')          
-        //FIXME: Сделать оболочку для Картинки
         .about__image-reverse
           img.about__img-reverse(src="./images/form-imgLeft.png" alt="form-image")
 

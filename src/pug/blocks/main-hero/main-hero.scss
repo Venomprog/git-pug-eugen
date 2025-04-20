@@ -25,9 +25,7 @@
     margin-top: rem(30px);
   }
 
-
   &__inner {
-
     @media #{media('<',t)} {
       padding-inline: rem(50px);
     }
@@ -47,7 +45,6 @@
     @media #{media('<',t)} {
       max-width: rem(344px);
     }
-
   }
 
   &__title {
@@ -58,7 +55,6 @@
   }
 
   &__actions {
-
     margin-top: rem(31px);
 
     @media #{media('<',m)} {
@@ -67,9 +63,7 @@
     }
   }
 
-
   &__info {
-    //FIXME: Нужен блок Дескрипшн и там всего его элементы
     margin-top: rem(14px);
     display: flex;
     flex-direction: column;
@@ -92,7 +86,6 @@
         padding-right: 0;
       }
     }
-
   }
 
   &__list {
@@ -100,9 +93,6 @@
     display: flex;
     align-items: center;
     gap: rem(16px);
-
-
-
   }
 
   &__item {
@@ -117,12 +107,8 @@
       color: #061224;
       font-weight: 500;
       font-size: rem(24px);
-
     }
-
   }
-
-
 
   &__image {
     position: absolute;
@@ -137,7 +123,6 @@
       height: rem(676px);
       object-fit: cover;
     }
-
   }
 
   &__button-register {
@@ -153,7 +138,6 @@
     transform: translateX(-50%);
   }
 
-
   &__pagination-items {
     display: flex;
     align-items: center;
@@ -165,12 +149,12 @@
     width: rem(10px);
     height: rem(10px);
     border-radius: 50%;
-    border: 2px solid #1064E5;
-    background-color: #DEEEFC;
+    border: 2px solid #1064e5;
+    background-color: #deeefc;
     cursor: pointer;
 
     &:hover {
-      background-color: #1064E5;
+      background-color: #1064e5;
     }
   }
 }

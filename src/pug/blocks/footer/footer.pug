@@ -8,50 +8,47 @@ mixin footer
           .footer__nav
             ul.footer__nav-list
               li.footer__nav-item
-                a.footer__nav-link(href="#") Про нас 
+                a.footer__nav-link(href='#') Про нас
               li.footer__nav-item
-                a.footer__nav-link(href="#") Цены
+                a.footer__nav-link(href='#') Цены
               li.footer__nav-item
-                a.footer__nav-link(href="#") Вход 
+                a.footer__nav-link(href='#') Вход
               li.footer__nav-item
-                a.footer__nav-link(href="#") Регистрация
+                a.footer__nav-link(href='#') Регистрация
             ul.footer__nav-block
               li.footer__nav-item
-                a.footer__nav-link(href="#") Блог
+                a.footer__nav-link(href='#') Блог
               li.footer__nav-item
-                a.footer__nav-link(href="#") Контакты
+                a.footer__nav-link(href='#') Контакты
         .footer__row-right
           .footer__contacts
             address.footer__contacts-mail
-              p  
-                a(href="infosmartsign@smarttender.biz") infosmartsign@smarttender.biz
-              p  
-                a(href="Facebook") Facebook
-          .footer__contacts 
+              p
+                a(href='infosmartsign@smarttender.biz') infosmartsign@smarttender.biz
+              p
+                a(href='Facebook') Facebook
+          .footer__contacts
             address.footer__contacts-tel
-              //FIXME: Почему без класса?
-              p.footer__contacts-text 
-                | пр-т Миколи Бажана, 14, 
+              p.footer__contacts-text
+                | пр-т Миколи Бажана, 14,
                 br
                 | А Київ, 02072
-              p.footer__contacts-text  
-                a(href="tel:0 800 750643") 0 800 750643
-              p.footer__contacts-text  
-                a(href="tel:+380 44 334 56 43") +380 44 334 56 43
-              p.footer__contacts-text  
-                a(href="tel:+380 44 338 86 43") +380 44 338 86 43
+              p.footer__contacts-text
+                a(href='tel:0 800 750643') 0 800 750643
+              p.footer__contacts-text
+                a(href='tel:+380 44 334 56 43') +380 44 334 56 43
+              p.footer__contacts-text
+                a(href='tel:+380 44 338 86 43') +380 44 338 86 43
         .footer__button.visible-mobile
-          //FIXME: В миксин
           +button('', 'button', 'button__up')
             +arrow-up
       .footer__extra
         .footer__extra-inner.container
           .footer__extra-copyright
             p.footer__extra-text
-              |© <time datetime="2020">2020</time> Signy
+              | © <time datetime="2020">2020</time> Signy
           .footer__extra-right
             p.footer__extra-text
-              a.footer__extra-link(href="#") Договір оферти
+              a.footer__extra-link(href='#') Договір оферти
             p.footer__extra-text
-              a.footer__extra-link(href="#") Безпека сервісу
-        
+              a.footer__extra-link(href='#') Безпека сервісу
