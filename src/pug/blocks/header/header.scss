@@ -7,6 +7,7 @@
   left: 0px;
   right: 0px;
   z-index: 10;
+  
 
   @media #{media('>',t)} {
     .visible-mobile {
@@ -22,11 +23,13 @@
   }
 
   &__inner {
-    padding: rem(36px) rem(104px);
+    padding: rem(36px) rem(104px) rem(15px);
     display: flex;
     align-items: center;
-    //FIXME: цвет хедера - прозрачный
-    background-color: #deeefc;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    //FIXME: цвет хедера - полупрозрачный
+
 
     @media #{media('<',t)} {
       justify-content: space-between;
@@ -45,6 +48,7 @@
   }
 
   @media #{media('<',t)} {
+
     .header__menu,
     .header__actions,
     .header__menu-item {

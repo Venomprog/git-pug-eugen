@@ -11,20 +11,19 @@
 }
 
 .main-hero {
-  margin-top: rem(110px);
   display: flex;
   align-items: center;
   position: relative;
   height: rem(676px);
 
-  @media #{media('<',t)} {
+  /* @media #{media('<',t)} {
     margin-top: rem(60px);
   }
 
   @media #{media('<',m)} {
     margin-top: rem(30px);
   }
-
+*/
   &__inner {
     @media #{media('<',t)} {
       padding-inline: rem(50px);
@@ -58,6 +57,7 @@
     margin-top: rem(31px);
 
     @media #{media('<',m)} {
+      margin-top: rem(15px);
       display: flex;
       justify-content: center;
     }
@@ -115,12 +115,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: rem(720px);
     z-index: -1;
+
+    @media #{media('<',t)} {
+      height: rem(643px);
+    }
+
+    @media #{media('<',m)} {
+      height: rem(592px);
+    }
 
     &-img {
       width: 100%;
-      height: rem(676px);
+      height: 100%;
       object-fit: cover;
     }
   }

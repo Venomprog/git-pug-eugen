@@ -3,6 +3,7 @@
 
   font-weight: 500;
   font-size: rem(14px);
+  text-wrap: nowrap;
   line-height: rem(24px);
   text-align: center;
   border: 1.5px solid #1064E5;
@@ -10,7 +11,7 @@
   letter-spacing: 0.04em;
 
   &:hover {
-    color: #2b5a8f;
+    color: #dbc6a6;
   }
 
 }

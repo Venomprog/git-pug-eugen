@@ -24,9 +24,12 @@ mixin main-hero
               p
               | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!
       .main-hero__actions
-        +button('ПОПРОБОВАТЬ БЕСПЛАТНО', 'button', 'btn btn--blue btn--medium') 
+        +button('ПОПРОБОВАТЬ БЕСПЛАТНО', 'button', 'btn btn--blue btn--medium')
     .main-hero__image
-      img.main-hero__image-img(src='./images/main-image.png', alt='')
+      picture
+        source(srcset="./images/main-image-mobile.png" media="(max-width: 767px)")
+        source(srcset="./images/main-image-tablet.png" media="(max-width: 1023px)")
+        img.main-hero__image-img(src="./images/main-image-desktop.png" alt="человек с ноутбуком")
       .main-hero__pagination
         .main-hero__pagination-items
           button.main-hero__pagination-item
