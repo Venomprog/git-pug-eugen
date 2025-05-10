@@ -1,14 +1,40 @@
-mixin main-hero(mods)
-  -
-    const baseName = 'main-hero'
-    let allMods = ''
-    if (typeof mods !== 'undefined' && mods) {
-      const modsList = mods.split(',')
-      for (const element of modsList) {
-        allMods += element.trim()[0] === '_' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
-      }
-      allMods = allMods.trim()
-    }
-
-  .main-hero(class=allMods)&attributes(attributes)
-    | Main-hero
+mixin main-hero
+  section.main-hero
+    .main-hero__inner.container
+      .main-hero__body
+        h1.main-hero__title.title-medium Цифровой документооборот <br> в три этапа:
+        .main-hero__description
+          ul.main-hero__list
+            li.main-hero__item
+              .main-hero__button
+                | 1
+            span.main-hero__number
+              +line
+            li.main-hero__item
+              .main-hero__button
+                | 2
+            span.main-hero__number
+              +line
+            li.main-hero__item
+              .main-hero__button
+                | 3
+          .main-hero__info
+            h3.main-hero__info-title Быстрая регистрация
+            .main-hero__info-text
+              p
+              | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!
+      .main-hero__actions
+        +button('ПОПРОБОВАТЬ БЕСПЛАТНО', 'button', 'btn btn--blue btn--medium')
+    .main-hero__image
+      picture
+        source(srcset="./images/main-image-mobile.png" media="(max-width: 767px)")
+        source(srcset="./images/main-image-tablet.png" media="(max-width: 1023px)")
+        img.main-hero__image-img(src="./images/main-image-desktop.png" alt="человек с ноутбуком")
+      .main-hero__pagination
+        .main-hero__pagination-items
+          button.main-hero__pagination-item
+            span.main-hero__pagination-number
+          button.main-hero__pagination-item
+            span.main-hero__pagination-number
+          button.main-hero__pagination-item
+            span.main-hero__pagination-number

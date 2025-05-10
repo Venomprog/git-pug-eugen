@@ -1,0 +1,50 @@
+.notes {
+
+  padding: rem(40px) 0;
+  background-color: rgba(216, 241, 240, 1);
+
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: rem(32px);
+    display: flex;
+    justify-content: space-between;
+    gap: rem(50px);
+
+    @media #{media('<',t)} {
+      :nth-child(3) {
+        display: none;
+      }
+    }
+    @media #{media('<',m)} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item-img {
+    opacity: 0.5;
+  }
+
+  &__item-content {
+    margin-top: rem(14px);
+    display: flex;
+    flex-direction: column;
+    gap: rem(6px);
+    padding-left: rem(10px);
+  }
+
+  &__item-title {
+    line-height: normal;
+  }
+
+  &__item-date {
+    font-weight: 500;
+    font-size: rem(14px);
+
+  }
+}

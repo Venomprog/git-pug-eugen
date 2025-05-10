@@ -1,0 +1,10 @@
+
+//- Миксин для создания кнопки
+//mixin button(text, type, className)
+  button(type=type || 'button' class=className)&attributes(attributes)= 
+//
+mixin button(text, type, className)
+  button(class=className, type=type)
+    | #{text}
+    if block
+      block  

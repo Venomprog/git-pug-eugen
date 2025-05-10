@@ -1,33 +1,30 @@
 mixin header
-  header.header.container
-    .header__inner
-      a.header__logo(href="#")
+  header.header
+    .header__inner.container
+      a.header__logo(href='#')
         +header-logo
       nav.header__menu
         .header__menu-list
           .header__menu-item
-            .header__menu-link(href="#") 0 800 750 643
+            .header__menu-link(href='#') 0 800 750 643
               span.header__arrow-down
-                +arrow-black-down   
+                +arrow-black-down 
           .header__menu-item
-            .header__menu-link(href="#") ПРО НАС
+            .header__menu-link(href='#') ПРО НАС
               span.header__arrow-down
-                +arrow-black-down   
+                +arrow-black-down 
           .header__menu-item
-            a.header__menu-link(href="#") ЦЕНЫ 
+            a.header__menu-link(href='#') ЦЕНЫ
           .header__menu-item
-            a.header__menu-link(href="#") КОНТАКТЫ
-      button.header__button-enter.button
-        span.header__button-text ВХОД
-      button.header__button-register.button
-        span.header__button-text РЕГИСТРАЦИЯ
+            a.header__menu-link(href='#') КОНТАКТЫ
+      .header__actions
+        +button('ВХОД', 'button', 'btn btn--small') 
+        +button('РЕГИСТРАЦИЯ', 'button', 'btn btn--blue btn--small')
       .header__menu-item
-        .header__menu-link(href="#") РУС
+        .header__menu-link(href='#') РУС
           span.header__arrow-down
             +arrow-black-down
-      button.header__button-burger.hidden-hidden
-        span.header__button-burger-line
-        span.header__button-burger-line
-        span.header__button-burger-line
-
-
+      button.header__button-burger.visible-mobile
+        span
+        span
+        span

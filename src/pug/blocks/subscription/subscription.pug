@@ -1,0 +1,14 @@
+mixin subscription
+  section.subscription
+    .subscription__inner
+      h2.subscription__title.title-medium 
+        | Подпишись на наши новости!
+      .subscription__body-content
+        p.subscription__description
+          | Введи свой электронный адрес и будь в курсе всех обновлений
+        form.subscription__form
+          .subscription__input-size
+            input.subscription__input.input(type="email" placeholder="Введите ваш email")
+          .subscription__button-size
+            +button('ПОДПИСАТЬСЯ', 'button', 'btn btn--blue btn--medium') 
+

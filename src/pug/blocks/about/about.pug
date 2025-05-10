@@ -1,0 +1,38 @@
+mixin main-about
+  section.about 
+    .about__inner
+      .about__body.container
+        .about__body-content
+          .about__title.title-medium
+            h3.about__title-text Комфорт в работе
+          .about__description
+            p.about__description-text
+              |&ndash; Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+            p.about__description-text
+              |&ndash; Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+            p.about__description-text
+              |&ndash; Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+            p.about__description-text
+              |&ndash; Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+          .about__button-item
+            +button('УЗНАТЬ БОЛЬШЕ', 'button', 'btn btn--medium') 
+        .about__image                   
+          img.about__img(src="./images/form-imgRight.png " alt="form-image")
+      .about__body-reverse.container
+        .about__body-content
+          .about__title.title-medium
+            h3.about__title-text Наш продукт это:
+          .about__description
+            p.about__description-text
+              |&ndash; Web версия без установки программного обеспечения
+            p.about__description-text
+              |&ndash; Возможность бесплатно и безлимитно обрабатывать входящие документы
+            p.about__description-text
+              |&ndash; Простота интеграции с 1С и другими сервисами
+            p.about__description-text
+              |&ndash; Поддержка входа через Mobile ID
+          .about__button-item
+            +button('ЗАРЕГИСТРИРОВАТЬСЯ', 'button', 'btn btn--blue btn--medium')          
+        .about__image-reverse
+          img.about__img-reverse(src="./images/form-imgLeft.png" alt="form-image")
+

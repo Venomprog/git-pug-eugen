@@ -1,3 +1,24 @@
+.title-small {
+  font-size: rem(24px);
+  font-weight: 500;
+}
+
+.title-medium {
+  font-size: clamp(20px, 2.5rem, 40px);
+  font-weight: 500;
+  line-height: rem(45px);
+
+
+
+}
+
+.title-large {
+  font-size: rem(73px);
+  font-weight: 500;
+}
+
+
+
 .title-200 {
   font-family: 'Suisse Intl';
   font-weight: 400;
@@ -7,5 +28,5 @@
 .text {
   font-family: 'Suisse Intl';
   font-weight: 400;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.02em;
 }

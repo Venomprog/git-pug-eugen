@@ -1,0 +1,46 @@
+
+.btn {
+
+  font-weight: 500;
+  font-size: rem(14px);
+  text-wrap: nowrap;
+  line-height: rem(24px);
+  text-align: center;
+  border: 1.5px solid #1064E5;
+  border-radius: var(--border-radius);
+  letter-spacing: 0.04em;
+
+  &:hover {
+    color: #dbc6a6;
+  }
+
+}
+
+
+.btn--blue {
+  background-color: #1064E5;
+  color: #fff;
+  width: fit-content;
+
+}
+
+.btn--white {
+  background-color: #fff;
+}
+
+/* Размеры */
+.btn--small { padding: rem(8px) rem(32px)}
+.btn--medium { padding: rem(17px) rem(32px); font-size: rem(16px); }
+.btn--large { padding: 20px 30px; font-size: 18px; }
+
+
+a:hover {
+  color: var(--color-light-gray);
+}
+
+
+
+
+
+
+

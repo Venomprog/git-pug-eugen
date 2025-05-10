@@ -3,29 +3,29 @@
 
 /**
   Нормализация блочной модели
- */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-/**
-    Убираем внутренние отступы слева тегам списков,
-    у которых есть атрибут class
-   */
-:where(ul, ol):where([class]) {
-  padding-left: 0;
-}
-
-/**
-    Убираем внешние отступы body и двум другим тегам,
-    у которых есть атрибут class
-   */
-body,
-:where(blockquote, figure):where([class]) {
-  margin: 0;
-}
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  
+  /**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+  */
+  :where(ul, ol):where([class]) {
+    padding-left: 0;
+  }
+  
+  /**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+  */
+  body,
+  :where(blockquote, figure):where([class]) {
+    margin: 0;
+  }
+  
 
 /**
     Убираем внешние отступы вертикали нужным тегам,
@@ -86,15 +86,7 @@ p:where(:not([class]):not(:last-child)) {
 }
 
 
-/**
-    Упрощаем работу с изображениями и видео
-   */
-img,
-video {
-  display: block;
-  max-width: 100%;
 
-}
 
 /**
     Наследуем свойства шрифт для полей ввода
@@ -155,9 +147,6 @@ label {
 }
 
 
-
-
-
 /**
     Чиним баг задержки смены цвета при взаимодействии с svg-элементами
    */
@@ -196,30 +185,31 @@ svg * {
   --color-dark:
   --color-dark-alternate: #315912;
   --color-light:
-    --color-dark-gray: #404040;
+  --color-dark-gray: #404040;
   --color-light-gray: #a99090;
 
-  --border-radius: 30px;
+  --border-radius: 45px;
   --border: 1px solid var(--color-light);
-
-
 
   --input-height: 54px;
 
-  --container-width: 1440px;
-  --container-padding-x: 103px;
+  --container-width: rem(1232px);
+  --container-padding-x: rem(103px);
 
   --transition-duration: 0.2s;
 
-  --header-height: 90px;
+  --header-height: rem(90px);
+
+  --font: 'Roboto', 'Arial', sans-serif;
+  --black: #061224;
 }
 
 
 
 body {
-  font-family: var(--font-family-base);
-  font-size: 16px;
-  font-weight: 300;
+  font-family: var(--font);
+  font-size: rem(18px);
+  font-weight: 400;
   line-height: 1.75;
 
   background-color: var(--color-dark);
@@ -234,47 +224,21 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
-.button {
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-
-  &:hover {
-    color: #2b5a8f;
-  }
-
-}
 
 
 
-
-
-
-a:hover {
-  color: var(--color-light-gray);
-}
 
 p {
   margin-block: 0;
 }
 
 
-p:not([class]):not(:last-child) {
-  margin-bottom: 6px;
-}
 
 .container {
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-inline: var(--container-padding-x);
+  padding: 0px rem(105px);
 }
 
-.container-wide {
-  max-width: 1920px;
-  margin-inline: auto;
-}
+
 
 .visually-hidden {
   position: absolute !important;
@@ -321,8 +285,7 @@ $colors: (
 }
 
 // media
+*/
 $mediaWidthLaptop: 1340px;
 $mediaWidthTablet: 767px;
 $mediaWidthMobile: 320px;
-
-*/
